@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap'); */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #34495E;
+    font-family: 'Poppins', sans-serif;
+    background: #F7F9F9;
+}
+.card{
+    border: none;
+    background: #F7F9F9;
+    width: 670px;
+}
+.list-group-item{
+    border: 2px solid transparent;
+    font-size: 18px;
+}
+.list-group-item:hover{
+    border: 2px solid #17a2b8;
+    cursor: pointer;
+}
+.activeOption{
+    background:  #17a2b8;
+    color: #fff;
+}

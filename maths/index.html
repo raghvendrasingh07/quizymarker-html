@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizy Marker | Maths Quiz</title>
+    <link rel="shortcut icon" href="../quizyMarker-logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light">
+      <a class="navbar-brand d-md-none d-block" href="">
+        <img src="../quizyMarker-logo.svg" alt="" style="width: 38px;">
+      </a>
+      <a class="navbar-brand d-md-block d-none" href="" style="color: #34495E">
+        Quizy<span class="text-danger">Marker</span>
+      </a>
+      <div class="d-md-none">
+        <a href="../contact.html" class="mx-2">Contact</a>
+        <span class="navbar-toggler-icon" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"></span>  
+      </div>
+      <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="../physics/">Physics Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="../maths/">Maths Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="../english/">English Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="../about.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-md-block d-none text-primary" href="../contact.html">Contact</a>
+            </li>
+          </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <h3 class="h1-responsive my-3">Maths Quiz</h3>
+      <div class="d-flex align-items-center">
+      <a href="../index.html"><i class="fas fa-angle-left"></i> Back</a>
+      <button class="btn btn-secondary ml-auto" id="instructionsBtn">Read Instructions</button>
+
+      <!-- toast plugin -->
+      <div class="toast" id="instructionsToast" data-delay="5000"
+        style="position:absolute; top: 180px; right: 20px; z-index: 1; background: #F7F9F9;">
+        <div class="toast-header">
+          <img src="../quizyMarker-logo.svg" class="mr-2" alt="" style="width: 18px;">
+          <strong class="mr-auto">Instructions</strong>
+          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="toast-body">
+          1) There are total 16 questions given. <br>
+          2) Each question comprise 4 marks. <br>
+          3) 1 marks will deducted for each wrong answers.
+        </div>
+      </div>
+    </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
+          <div class="card shadow">
+            <div class="card-header d-flex">
+                <h6 class="h6-responsive font-weight-bold">Welcome!</h6>
+                <!-- <h6 class="h6-responsive ml-auto" id="timer">00:00</h6> -->
+              </div>
+            <div class="card-body">
+                <div id="questions">
+                  <!-- <h5 class="h5-responsive mb-3">Question</h5>
+                  <ul class="list-group">
+                    <li class="list-group-item mb-3">Option1</li>
+                    <li class="list-group-item mb-3">Option2</li>
+                    <li class="list-group-item mb-3">Option3</li>
+                    <li class="list-group-item">Option4</li>
+                  </ul> -->
+                </div>
+                <button class="btn mt-3 float-right text-light bg-info" onclick="next()">Next Question</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center align-items-center mt-md-0 mt-3">
+          <img src="../maths.svg" class="img-fluid w-50" alt="">
+        </div>
+      </div>
+      <hr>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="page-footer font-small pt-2">
+
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
+
+        <!-- Grid row -->
+        <div class="row d-flex align-items-center">
+
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8">
+
+            <!--Copyright-->
+            <p class="text-center text-md-left">© 2020:
+              <a href="">
+                <strong> Quizy Marker</strong>
+              </a>
+            </p>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0">
+
+            <!-- Social buttons -->
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
+    </footer>
+  <!-- Footer -->
+    <script defer src="mathscript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+    $(function () {
+      $('#instructionsBtn').click(function () {
+        $('#instructionsToast').toast('show');
+      })
+    });
+  </script>
+</body>
+</html>

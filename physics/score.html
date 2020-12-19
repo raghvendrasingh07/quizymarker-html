@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizy Marker | Physics Score</title>
+    <link rel="shortcut icon" href="../quizyMarker-logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .card {
+            width: auto;
+        }
+
+        .card-body {
+            background-color: #eee;
+        }
+
+        .card-header {
+            border: none;
+            background-color: #fff;
+        }
+
+        .list-group-item {
+            border: 2px solid transparent;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 class="h1-responsive ml-3 mt-3">Physics Quiz</h3>
+    <a href="../physics/"><i class="fas fa-angle-left ml-3"></i> Back</a>
+    <hr>
+    <div class="container mt-4">
+        <div class="d-block mb-3 text-center">
+            <i class="fa fa-trophy mb-3 text-primary" style="font-size: 130px"></i>
+            <h3 class="h3-responsive font-weight-bold mb-3" id="greeting"></h3>
+            <h5 class="h5-responsive mb-3">Your Score is : <span id="totalScore"></span> out of 64</h5>
+            <h5 class="h5-responsive mb-3">Wrong answers : <span id="wrongAnswer"></span> out of 16</h5>
+        </div>
+    </div>
+    <script>
+        var TotalScore = document.getElementById('totalScore');
+        var WrongAnswer = document.getElementById('wrongAnswer');
+
+        TotalScore.innerText = sessionStorage.getItem("points");
+        WrongAnswer.innerText = sessionStorage.getItem("wrong");
+
+        if (TotalScore.innerText == 64) {
+            document.getElementById('greeting').innerText = "Hurray! You did all correct.";
+        } else if (TotalScore.innerText >= 50) {
+            document.getElementById('greeting').innerText = "Well Done!";
+        } else if (TotalScore.innerText >= 25 && TotalScore.innerText <= 50) {
+            document.getElementById('greeting').innerText = "Nice Try!";
+        } else {
+            document.getElementById('greeting').innerText = "Need more Improvement";
+        }
+    </script>
+</body>
+
+</html>
