@@ -1,4 +1,4 @@
-# Quizymarker
+# Quiz Website - Quizymarker
 
 Quizymarker is a simple quiz website which is created using html, css and vanilla javascript. This website contain quiz of three subjects that are physics, maths and english.
 
@@ -7,11 +7,11 @@ Quizymarker is a simple quiz website which is created using html, css and vanill
 There are some simple features of this website which are given as follow:
 
 - It has three Subjects – Physics, Maths and English.
-- Each subject will have 16 questions.
+- Each subject has 16 questions.
 - There is negative marking for each question.
-- For each correct, 4 marks will be rewarded and for each wrong, -1 will be as punishment.
-- After submission of MCQs, score will be shown with remarks.
-- It will also show how many wrong answered.
+- For each correct, 4 marks is rewarded and for each wrong, -1 is as punishment.
+- After submission of MCQs, score is shown with remarks.
+- It also shows how many wrong answered.
 
 ### Technologies used
 
@@ -29,4 +29,4 @@ There are some simple features of this website which are given as follow:
 
 ## Authors
 
-- **Raghvendra Singh** - _Initial work_ - [raghvendrasingh07](https://github.com/raghvendrasingh07)
+- **Raghvendra Singh** - _Initial work_ - [rsinghcodes](https://github.com/rsinghcodes)
