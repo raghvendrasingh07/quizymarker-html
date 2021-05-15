@@ -1,17 +1,24 @@
-# Quiz Website - Quizymarker
+---
 
-Quizymarker is a simple quiz website which is created using html, css and vanilla javascript. This website contain quiz of three subjects that are physics, maths and english.
+![Quizymarker Mockup](https://user-images.githubusercontent.com/67682451/118351293-c3c36e80-b578-11eb-9ca4-1d81654c0d7d.png)
+
+
+**Quizymarker is a simple quiz website created using HTML, CSS and JavaScript. This website has a quiz of three subjects which are Physics, Mathematics and English.**
 
 ### Features
 
-There are some simple features of this website which are given as follow:
+Some simple features of this website are as follows:
 
-- It has three Subjects – Physics, Maths and English.
-- Each subject has 16 questions.
+- It has three subjects - Physics, Maths and English.
+- There are 16 questions in each subject.
 - There is negative marking for each question.
-- For each correct, 4 marks is rewarded and for each wrong, -1 is as punishment.
-- After submission of MCQs, score is shown with remarks.
-- It also shows how many wrong answered.
+- For each correct, a prize of 4 points is awarded and -1 for each wrong is in the form of punishment.
+- After submission of MCQ, the score is shown with comments.
+- It also shows how many wrong answers were given.
+
+### Complete MVP 
+
+![Quizymarker MVP](https://user-images.githubusercontent.com/67682451/118352751-b611e700-b580-11eb-9f16-2fea177f6a02.png)
 
 ### Technologies used
 
@@ -22,11 +29,12 @@ There are some simple features of this website which are given as follow:
 <img height="32" width="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" /> &nbsp;&nbsp;
 </div>
 
-# Demo
+
+### Demo ?
 
 👉 Watch it <a href="http://www.quizymarker.epizy.com/">here</a>.
 <br>
 
-## Authors
+### _Project done by [Raghvendra Singh](https://github.com/rsinghcodes)_
 
-- **Raghvendra Singh** - _Initial work_ - [rsinghcodes](https://github.com/rsinghcodes)
+---
